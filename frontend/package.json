@@ -9,5 +9,8 @@
     "dev": "npm --prefix vite-project run dev",
     "build": "npm --prefix vite-project run build",
     "preview": "npm --prefix vite-project run preview"
+  },
+  "dependencies": {
+    "@tabler/icons-webfont": "^3.44.0"
   }
 }

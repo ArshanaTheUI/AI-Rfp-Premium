@@ -4,12 +4,12 @@ import Navbar from "./Navbar";
 import "../styles/layout.css";
 
 const navItems = [
-  { to: "/", label: "Dashboard", icon: "🏠" },
-  { to: "/create-rfp", label: "Create RFP", icon: "📝" },
-  { to: "/vendors", label: "Vendors", icon: "👥" },
-  { to: "/send-rfp", label: "Send RFP", icon: "✉️" },
-  { to: "/rfps", label: "RFP List", icon: "📄" },
-  { to: "/wizard", label: "Wizard", icon: "🚀" },
+  { to: "/", label: "Dashboard", icon: "ti-layout-dashboard" },
+  { to: "/create-rfp", label: "Create RFP", icon: "ti-file-plus" },
+  { to: "/vendors", label: "Vendors", icon: "ti-building-store" },
+  { to: "/send-rfp", label: "Send RFP", icon: "ti-send" },
+  { to: "/rfps", label: "RFP List", icon: "ti-files" },
+  { to: "/wizard", label: "Wizard", icon: "ti-sparkles" },
 ];
 
 export default function Layout() {
@@ -39,7 +39,9 @@ export default function Layout() {
                   : "sidebar-link"
               }
             >
-              <span className="sidebar-icon">{item.icon}</span>
+              <span className="sidebar-icon">
+                <i className={`ti ${item.icon}`} aria-hidden="true" />
+              </span>
               <span className="sidebar-label">{item.label}</span>
             </Link>
           ))}

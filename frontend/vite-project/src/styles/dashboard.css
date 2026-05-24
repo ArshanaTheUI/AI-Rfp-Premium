@@ -47,7 +47,11 @@
   display: grid;
   gap: 14px;
 }
-
+.activty_flex{
+        align-items: center !important;
+    justify-content: flex-start!important;
+    
+}
 .recent-item,
 .activity-item {
   display: flex;

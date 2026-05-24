@@ -96,22 +96,38 @@ export default function SendRfp() {
             </div>
 
             {/* SELECT VENDORS */}
-            <div className="card-box">
-                <h3>Select Vendors</h3>
+        <div className="card-box">
+  <h3>Select Vendors</h3>
 
-                {vendors.map((v) => (
-                    <label key={v._id} style={{ display: "block", marginBottom: "10px", color: "var(--navy)" }}>
-                        <input
-                            type="checkbox"
-                            checked={selectedVendors.includes(v._id)}
-                            onChange={() => toggleVendor(v._id)}
-                        />
-                        {"  "}
-                        {v.name} ({v.contactEmail})
-                    </label>
-                ))}
-            </div>
+  {vendors.map((v) => (
+    <label
+      key={v._id}
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "10px",
+        marginBottom: "10px",
+        color: "var(--navy)",
+        cursor: "pointer",
+      }}
+    >
+     <input
+  type="checkbox"
+  style={{
+    width: "auto",
+    height: "auto",
+    flexShrink: 0,
+  }}
+  checked={selectedVendors.includes(v._id)}
+  onChange={() => toggleVendor(v._id)}
+/>
 
+      <span>
+        {v.name} ({v.contactEmail})
+      </span>
+    </label>
+  ))}
+</div>
             {/* SEND BUTTON */}
             <button className="btn-primary" onClick={sendRfp}>
                 Send RFP

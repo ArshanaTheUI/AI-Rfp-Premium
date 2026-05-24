@@ -295,3 +295,101 @@ label {
     align-items: flex-start;
   }
 }
+
+select {
+  background: #111827;
+  color: #fff;
+}
+
+select option {
+  background: #111827;
+  color: #fff;
+}
+
+
+.vendor-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+.vendor-row {
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+border: 1px solid var(--gold);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vendor-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+}
+.star-rating {
+  font-size: 18px;
+}
+
+
+.dashboard-aside{
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+.panel-card{
+  background:#111827;
+  border:1px solid rgba(212,175,55,.2);
+  border-radius:20px;
+  padding:20px;
+}
+
+.activity-list{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  margin-top:16px;
+}
+
+.activity-item{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:12px;
+  border-radius:12px;
+  background:rgba(255,255,255,.03);
+}
+
+.status-pill{
+  min-width:60px;
+  text-align:center;
+  padding:6px 12px;
+  border-radius:999px;
+  background:#d4af37;
+  color:#111;
+  font-size:.8rem;
+  font-weight:600;
+}
+
+.activity-item strong{
+  display:block;
+  color:white;
+}
+
+.activity-item p{
+  margin:4px 0 0;
+  color:#9ca3af;
+  font-size:.85rem;
+}

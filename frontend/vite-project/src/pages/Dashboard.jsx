@@ -25,12 +25,12 @@ export default function Dashboard() {
         loadStats();
     }, []);
 
-    useEffect(() => {
-        const done = localStorage.getItem("rfp_wizard_done");
-        if (!done) {
-            navigate("/wizard");
-        }
-    }, []);
+    // useEffect(() => {
+    //     const done = localStorage.getItem("rfp_wizard_done");
+    //     if (!done) {
+    //         navigate("/wizard");
+    //     }
+    // }, []);
 
     if (loading) return <div className="dashboard-container">Loading...</div>;
 
@@ -102,7 +102,7 @@ export default function Dashboard() {
                         </div>
                         <div className="activity-list">
                             {stats.recentRfps.slice(0, 5).map((r) => (
-                                <div key={r._id} className="activity-item">
+                                <div key={r._id} className="activity-item activty_flex">
                                     <span className="status-pill">New</span>
                                     <div>
                                         <strong>{r.title || "Unnamed RFP"}</strong>
