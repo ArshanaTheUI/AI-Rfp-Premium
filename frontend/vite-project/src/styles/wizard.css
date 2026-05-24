@@ -1,0 +1,59 @@
+.wizard-container {
+  min-height: calc(100vh - 76px);
+  background: radial-gradient(circle at top, rgba(255, 255, 255, 0.08), transparent 30%),
+    linear-gradient(180deg, #12172e 0%, #1a2241 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.wizard-card {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+  width: min(100%, 600px);
+  padding: 36px;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  animation: fadeIn 0.4s ease;
+}
+
+.wizard-title {
+  color: var(--yellow);
+  margin-bottom: 10px;
+  font-size: clamp(2rem, 2.5vw, 2.6rem);
+}
+
+.wizard-desc {
+  margin-bottom: 26px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.progress-bar {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 28px;
+}
+
+.progress-segment {
+  height: 10px;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  transition: 0.4s;
+}
+
+.progress-segment.active {
+  background: var(--orange);
+}
+
+.wizard-nav {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+

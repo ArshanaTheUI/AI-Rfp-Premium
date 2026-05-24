@@ -1,0 +1,60 @@
+.rfp-grid {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(260px, 1fr) );
+  gap: 20px;
+}
+
+.rfp-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 260px;
+  padding: 24px;
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: var(--shadow);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.rfp-card h3 {
+  margin: 0 0 12px;
+  color: var(--white);
+}
+
+.rfp-card p {
+  color: rgba(255, 255, 255, 0.7);
+  flex: 1;
+  margin: 0 0 20px;
+}
+
+.rfp-card-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  font-weight: 700;
+}
+
+@media (max-width: 820px) {
+  .rfp-grid {
+    grid-template-columns: 1fr;
+  }
+}

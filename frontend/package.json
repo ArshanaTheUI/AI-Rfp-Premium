@@ -1,0 +1,13 @@
+{
+  "name": "ai-rfp-frontend",
+  "private": true,
+  "workspaces": [
+    "vite-project"
+  ],
+  "scripts": {
+    "start": "npm --prefix vite-project run dev",
+    "dev": "npm --prefix vite-project run dev",
+    "build": "npm --prefix vite-project run build",
+    "preview": "npm --prefix vite-project run preview"
+  }
+}
