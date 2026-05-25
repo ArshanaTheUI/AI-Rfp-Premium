@@ -54,20 +54,6 @@ const genAI = new GoogleGenerativeAI(
 //     throw new Error("AI could not generate valid JSON for RFP");
 //   }
 // };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 exports.parseRfpFromNL = async (text) => {
   const model = genAI.getGenerativeModel({
     model: "gemini-2.5-flash",
@@ -101,7 +87,6 @@ Format:
 Request:
 ${text}
 `;
-
   const result = await model.generateContent(prompt);
 
   const raw = result.response.text();
@@ -111,16 +96,9 @@ ${text}
   } catch (err) {
     const match = raw.match(/\{[\s\S]*\}/);
     if (match) return JSON.parse(match[0]);
-
     throw new Error("Gemini could not generate valid JSON");
   }
 };
-
-
-
-
-
-
 
 /**
  *  PARSE VENDOR EMAIL → STRUCTURED PROPOSAL JSON
