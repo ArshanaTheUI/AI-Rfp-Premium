@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { API } from "../api";
 import { useParams, Link } from "react-router-dom";
-import "../styles/pageCard.css";
+import "../styles/pagecard.css";
 import "../styles/button.css";
 import "../styles/RfpDetails.css";
 

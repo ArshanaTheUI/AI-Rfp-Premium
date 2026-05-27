@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { API } from "../api";
 import { Link, useNavigate } from "react-router-dom";
-import "../styles/pageCard.css";
+import "../styles/pagecard.css";
 import "../styles/button.css";
 import "../styles/RfpList.css";
 

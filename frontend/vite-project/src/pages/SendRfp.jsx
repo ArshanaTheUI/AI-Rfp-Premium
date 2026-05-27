@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { API } from "../api";
 import { useNavigate } from "react-router-dom";
 
-import "../styles/pageCard.css";
+import "../styles/pagecard.css";
 import "../styles/button.css";
 
 export default function SendRfp() {

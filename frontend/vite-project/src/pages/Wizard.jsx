@@ -4,7 +4,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 
 import "../styles/wizard.css";
 import "../styles/button.css";
-import "../styles/pageCard.css";
+import "../styles/pagecard.css";
 
 export default function Wizard() {
     const navigate = useNavigate();
