@@ -5,7 +5,7 @@ import './index.css'
 import App from './App.jsx'
 import "./styles/global.css"
 import "./styles/button.css"
-
+import "./styles/pagecard.css"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
